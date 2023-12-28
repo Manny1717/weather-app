@@ -23,7 +23,7 @@ export function useSearchLocation() {
       if (!(searchValue.trim().length > 1)) {
         throw new Error("Location not valid");
       }
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=de1c87324d1bebc8486c9f702c6d1b12`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=de1c87324d1bebc8486c9f702c6d1b12`;
       const response = await axios.get(url);
       if (!response) {
         throw new Error("Unable to get information at this time");
@@ -38,10 +38,14 @@ export function useSearchLocation() {
   }
 
   function onInputChange(e) {
-    searchValue(e.target.value);
+    setSearchValue(e.target.value);
   }
 
+  // function here to reset all values on a button
+
   return {
+    data,
+    searchValue,
     onLocationSearch,
     isLoading,
     errorMessage,

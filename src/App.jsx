@@ -1,8 +1,18 @@
 import { useSearchLocation } from "./hooks/use-search-location";
 
 function App() {
-  const { errorMessage, isLoading, onLocationSearch, onInputChange } =
-    useSearchLocation();
+  const {
+    data,
+    errorMessage,
+    isLoading,
+    onLocationSearch,
+    onInputChange,
+    searchValue,
+  } = useSearchLocation();
+
+  // to reset data, setData(undefined)
+
+  console.log("weather data -->", data);
 
   return (
     <div className="app">
@@ -29,7 +39,8 @@ function App() {
           </div>
 
           {/* setting users search value */}
-          <input onChange={onInputChange} />
+          <input onChange={onInputChange} value={searchValue} />
+          {/* <input onChange={(e) => console.log(e.target.value)} /> */}
           {/* submitting users search value */}
           <button onClick={onLocationSearch} disabled={isLoading}>
             {isLoading ? "loading...." : "search"}
