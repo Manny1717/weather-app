@@ -1,1 +1,30 @@
-{"coord":{"lon":-96.7836,"lat":32.7668},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"stations","main":{"temp":286,"feels_like":284.36,"temp_min":284.98,"temp_max":287.48,"pressure":1013,"humidity":39},"visibility":10000,"wind":{"speed":5.66,"deg":180,"gust":10.8},"clouds":{"all":20},"dt":1703624295,"sys":{"type":2,"id":2075302,"country":"US","sunrise":1703597259,"sunset":1703633245},"timezone":-21600,"id":4684904,"name":"Dallas","cod":200}
+{
+  "coord": { "lon": -96.7836, "lat": 32.7668 },
+  "weather": [
+    { "id": 801, "main": "Clouds", "description": "few clouds", "icon": "02d" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 286,
+    "feels_like": 284.36,
+    "temp_min": 284.98,
+    "temp_max": 287.48,
+    "pressure": 1013,
+    "humidity": 39
+  },
+  "visibility": 10000,
+  "wind": { "speed": 5.66, "deg": 180, "gust": 10.8 },
+  "clouds": { "all": 20 },
+  "dt": 1703624295,
+  "sys": {
+    "type": 2,
+    "id": 2075302,
+    "country": "US",
+    "sunrise": 1703597259,
+    "sunset": 1703633245
+  },
+  "timezone": -21600,
+  "id": 4684904,
+  "name": "Dallas",
+  "cod": 200
+}
